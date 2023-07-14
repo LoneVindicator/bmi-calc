@@ -2,7 +2,7 @@ const express = require('express'); //imports express
 const fs = require('fs');
 const path = require('path');
 const app = express(); //names express as app
-const port = 3000; //sets port number
+const port = process.env.PORT|| 3000; //sets port number
 
 app.set('views', 'views'); //tells express where the views are stored
 app.set('view engine', 'hbs'); //tells express what view engine we're using
